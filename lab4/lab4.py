@@ -1,7 +1,7 @@
 import cv2 
 import numpy as np
 
-imggrey = cv2.imread('lab4.jpg', cv2.IMREAD_GRAYSCALE)
+imggrey = cv2.imread('lab4_1.jpg', cv2.IMREAD_GRAYSCALE)
 
 def THRESH_BINARY_MY(img,threshold):
     height,width = img.shape
@@ -13,7 +13,7 @@ def THRESH_BINARY_MY(img,threshold):
                 img[y][x]=0
     return img
 
-cv2.imwrite('after_my_tresh_bin.jpg',THRESH_BINARY_MY(imggrey,127))
+cv2.imwrite("lab4_1_after_my_tresh_bin_170_255.jpg",THRESH_BINARY_MY(imggrey,170))
 
         
 cv2.waitKey(0)
