@@ -3,7 +3,13 @@ from math import e, pi
 
 a=input('Enter first number: ')
 x1=float(a)
-b=input('What action? ')
+b=input('What action?
+        Sum:      1
+        Subtract: 2
+        Multiply: 3
+        Divide:   4
+        Modulo:   5
+        Power:    6')
 x3=int(b)
 c=input('Enter second number: ')
 x2=float(c)
@@ -18,9 +24,9 @@ elif x3 == 4:
         print('Youre wrong')
     else
         print(str(x1),'/',str(x2),'=',str(x1/x2))
-elif x3 == 4:
-    print(str(x1),'%',str(x2),'=',str(x1%x2))
 elif x3 == 5:
+    print(str(x1),'%',str(x2),'=',str(x1%x2))
+elif x3 == 6:
     print(str(x1),'^',str(x2),'=',str(x1**x2))
 else 
     print('Youre wrong')
