@@ -5,6 +5,7 @@ a=input('Enter first number: ')
 if a=='pi':
     x1=pi
 elif a=='e':
+    x1=e
 else x1=float(a)
 b=input('What action?
         Sum:      1
@@ -16,8 +17,9 @@ b=input('What action?
 x3=int(b)
 c=input('Enter second number: ')
 if a=='pi':
-    x1=pi
+    x2=pi
 elif a=='e':
+    x2=e    
 else x2=float(c)
 if x3 == 1:
     print(str(x1),'+',str(x2),'=',str(x1+x2))
