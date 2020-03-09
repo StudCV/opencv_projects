@@ -9,6 +9,7 @@ def light_binary(img, threshold=128, maxVal=255):
                 img_binary[i, j]=maxVal
             else: img_binary[i, j]=0
     return img_binary
+
 img_gray=cv2.imread(r"C:\Users\happi\pics\pic.jpg",cv2.IMREAD_GRAYSCALE)
 img_gray_binary=light_binary(img_gray)
 cv2.imwrite(r"C:\Users\happi\pics\pic_grey_binary.jpg", img_gray_binary)
