@@ -6,7 +6,7 @@ if a=='pi':
     x1=pi
 elif a=='e':
     x1=e
-else x1=float(a)
+else: x1=float(a)
 b=input('What action?
         Sum:      1
         Subtract: 2
@@ -20,7 +20,8 @@ if a=='pi':
     x2=pi
 elif a=='e':
     x2=e    
-else x2=float(c)
+else: 
+    x2=float(c)
 if x3 == 1:
     print(str(x1),'+',str(x2),'=',str(x1+x2))
 elif x3 == 2:
@@ -30,12 +31,12 @@ elif x3 == 3:
 elif x3 == 4:
     if x2 == 0
         print('Youre wrong')
-    else
+    else:
         print(str(x1),'/',str(x2),'=',str(x1/x2))
 elif x3 == 5:
     print(str(x1),'%',str(x2),'=',str(x1%x2))
 elif x3 == 6:
     print(str(x1),'^',str(x2),'=',str(x1**x2))
-else 
+else: 
     print('Youre wrong')
 
