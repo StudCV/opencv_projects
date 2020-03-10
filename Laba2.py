@@ -28,10 +28,10 @@ if (choice >= 1 and choice <= 6):
   if choice == 1:
       res = num1 + num2
       print("Результат = ", res)
-  elif choice ==2:
+  elif choice == 2:
       res = num1 - num2
       print("Результат = ", res)
-  elif choice ==3:
+  elif choice == 3:
       res = num1 * num2
       print("Результат = ", res)
   elif (choice == 4 and num2 == 0):
@@ -42,6 +42,8 @@ if (choice >= 1 and choice <= 6):
   elif choice == 5:
       res = num1 % num2
       print("Результат = ", res)
+  elif (choice == 5 and num2 > 0):
+      print("Деление на ноль")
   elif choice == 6:
       res = num1 ** num2
       print("Результат = ", res)
