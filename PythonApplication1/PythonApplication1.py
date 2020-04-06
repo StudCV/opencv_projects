@@ -7,7 +7,14 @@ img1_gray=cv2.imread(r"C:\Users\happi\pics\pic1.jpg",cv2.IMREAD_GRAYSCALE)
 cv2.imwrite(r"C:\Users\happi\pics\pic_grey.jpg", img1_gray)
 cv2.imshow('Grayscale',img1_gray)
 
-img1_gray = 255 - img1_gray
+time1 = cv2.getTickCount()
+#img1_gray = 255 - img1_gray
+for i in range(563):
+    for j in range(1024):
+        img1_gray[i, j] = 255 - img1_gray[i, j]
+time2 = cv2.getTickCount()
+print(time2 - time1)
+
 cv2.imwrite(r"C:\Users\happi\pics\pic1_grey.jpg", img1_gray)
 cv2.imshow('Grayscale1',img1_gray)
 
